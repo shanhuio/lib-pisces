@@ -152,6 +152,20 @@ func (c *Client) put(ctx C, p string, r io.Reader, n int64) error {
 	return nil
 }
 
+// Copy copies an object.
+func (c *Client) Copy(ctx C, from, to string) error {
+	dest := minio.CopyDestOptions{
+		Bucket: c.bucket,
+		Object: c.path(to),
+	}
+	src := minio.CopySrcOptions{
+		Bucket: c.bucket,
+		Object: c.path(from),
+	}
+	_, err := c.client.CopyObject(ctx, dest, src)
+	return err
+}
+
 // PutFile copies a file.
 func (c *Client) PutFile(ctx C, p, fp string) error {
 	f, err := os.Open(fp)
