@@ -189,9 +189,26 @@ func (c *Client) Delete(ctx C, p string) error {
 // Stat returns the object info a particular object.
 func (c *Client) Stat(ctx C, p string) (*minio.ObjectInfo, error) {
 	var opts minio.StatObjectOptions
-	info, err := c.client.StatObject(ctx, c.bucket, p, opts)
+	info, err := c.client.StatObject(ctx, c.bucket, c.path(p), opts)
 	if err != nil {
 		return nil, errcode.Annotatef(minioError(err), "stat %q", p)
 	}
 	return &info, nil
+}
+
+// ListAll lists all objects in the bucket.
+func (c *Client) ListAll(ctx C) ([]*minio.ObjectInfo, error) {
+	var objs []*minio.ObjectInfo
+	opt := minio.ListObjectsOptions{
+		Recursive: true,
+		Prefix:    c.path(""),
+	}
+	ch := c.client.ListObjects(ctx, c.bucket, opt)
+	for obj := range ch {
+		if obj.Err != nil {
+			return nil, obj.Err
+		}
+		objs = append(objs, &obj)
+	}
+	return objs, nil
 }
