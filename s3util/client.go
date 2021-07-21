@@ -19,7 +19,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
-	"io/ioutil"
 	"net/url"
 	"os"
 	"path"
@@ -109,6 +108,15 @@ func (c *Client) PresignPut(ctx C, p string, exp time.Duration) (
 
 // GetBytes gets an object.
 func (c *Client) GetBytes(ctx C, p string) ([]byte, error) {
+	buf := new(bytes.Buffer)
+	if err := c.GetInto(ctx, p, buf); err != nil {
+		return nil, err
+	}
+	return buf.Bytes(), nil
+}
+
+// GetInto gets an object and writes its content into w.
+func (c *Client) GetInto(ctx C, p string, w io.Writer) error {
 	getError := func(err error) error {
 		return errcode.Annotatef(minioError(err), "get %q", p)
 	}
@@ -117,14 +125,13 @@ func (c *Client) GetBytes(ctx C, p string) ([]byte, error) {
 	var opts minio.GetObjectOptions
 	obj, err := c.client.GetObject(ctx, c.bucket, p, opts)
 	if err != nil {
-		return nil, getError(err)
+		return getError(err)
 	}
 	defer obj.Close()
-	bs, err := ioutil.ReadAll(obj)
-	if err != nil {
-		return nil, getError(err)
+	if _, err := io.Copy(w, obj); err != nil {
+		return getError(err)
 	}
-	return bs, nil
+	return nil
 }
 
 // GetJSON gets a JSON object.
