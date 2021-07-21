@@ -208,7 +208,8 @@ func (c *Client) ListAll(ctx C) ([]*minio.ObjectInfo, error) {
 		if obj.Err != nil {
 			return nil, obj.Err
 		}
-		objs = append(objs, &obj)
+		cp := obj
+		objs = append(objs, &cp)
 	}
 	return objs, nil
 }
