@@ -144,9 +144,14 @@ func (c *Client) GetJSON(ctx C, p string, v interface{}) error {
 }
 
 // Put puts an object into the bucket.
-func (c *Client) Put(ctx C, p string, r io.Reader, n int64) error {
+func (c *Client) Put(
+	ctx C, p string, r io.Reader, n int64, contentType string,
+) error {
 	p = c.path(p)
 	var opts minio.PutObjectOptions
+	if contentType != "" {
+		opts.ContentType = contentType
+	}
 	if _, err := c.client.PutObject(ctx, c.bucket, p, r, n, opts); err != nil {
 		return errcode.Annotatef(minioError(err), "put %q", p)
 	}
@@ -179,13 +184,13 @@ func (c *Client) PutFile(ctx C, p, fp string) error {
 	if err != nil {
 		return err
 	}
-	return c.Put(ctx, p, f, stat.Size())
+	return c.Put(ctx, p, f, stat.Size(), "")
 }
 
 // PutBytes saves an object.
 func (c *Client) PutBytes(ctx C, p string, data []byte) error {
 	r := bytes.NewReader(data)
-	return c.Put(ctx, p, r, int64(len(data)))
+	return c.Put(ctx, p, r, int64(len(data)), "")
 }
 
 // PutJSON puts a JSON object.
