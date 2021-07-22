@@ -19,6 +19,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
+	"net/http"
 	"net/url"
 	"os"
 	"path"
@@ -190,7 +191,8 @@ func (c *Client) PutFile(ctx C, p, fp string) error {
 // PutBytes saves an object.
 func (c *Client) PutBytes(ctx C, p string, data []byte) error {
 	r := bytes.NewReader(data)
-	return c.Put(ctx, p, r, int64(len(data)), "")
+	typ := http.DetectContentType(data)
+	return c.Put(ctx, p, r, int64(len(data)), typ)
 }
 
 // PutJSON puts a JSON object.
