@@ -13,6 +13,6 @@ require (
 	github.com/minio/sha256-simd v1.0.0 // indirect
 	github.com/rs/xid v1.3.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
-	shanhu.io/aries v0.0.0-20210720024516-88a3f96f5f87
+	shanhu.io/aries v0.0.0-20210721173427-e510c4aa044b
 	shanhu.io/misc v0.0.0-20210719202230-af35579e1ef9
 )
