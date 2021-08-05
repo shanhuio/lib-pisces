@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite" // sqlite db driver
 	"shanhu.io/misc/sqlx"
 )
 
