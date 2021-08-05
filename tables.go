@@ -65,7 +65,7 @@ func (ts *Tables) newOrderedKV(table string) *KV {
 		return NewOrderedMemKV()
 	case sqlx.Psql:
 		return NewOrderedPsqlKV(ts.db, table)
-	case sqlx.Sqlite3:
+	case sqlx.Sqlite3, sqlx.SqliteGo:
 		return NewOrderedSqlite3KV(ts.db, table)
 	default:
 		panic(fmt.Sprintf("unknown database driver: %q", driver))
@@ -78,7 +78,7 @@ func (ts *Tables) newKV(table string) *KV {
 		return NewMemKV()
 	case sqlx.Psql:
 		return NewPsqlKV(ts.db, table)
-	case sqlx.Sqlite3:
+	case sqlx.Sqlite3, sqlx.SqliteGo:
 		return NewSqlite3KV(ts.db, table)
 	default:
 		panic(fmt.Sprintf("unknown database driver: %q", driver))
