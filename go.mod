@@ -11,6 +11,7 @@ require (
 	github.com/minio/minio-go/v7 v7.0.12
 	github.com/minio/sha256-simd v1.0.0 // indirect
 	github.com/rs/xid v1.3.0 // indirect
+	golang.org/x/net v0.0.0-20210805182204-aaa1db679c0d // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	modernc.org/sqlite v1.12.0
 	shanhu.io/aries v0.0.0-20210731182906-21171eb1be2a
