@@ -47,6 +47,11 @@ func OpenSqlite3Tables(file string) (*Tables, error) {
 	return NewTables(db), nil
 }
 
+// NewMemTables creates a new table set that reside entirely inside memory.
+func NewMemTables() *Tables {
+	return NewTables(nil)
+}
+
 // NewTables creates a new table set using the given database backend. When db
 // is nil, it uses memory.
 func NewTables(db *sqlx.DB) *Tables {
