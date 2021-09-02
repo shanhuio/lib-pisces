@@ -23,6 +23,9 @@ type Identity struct {
 
 // NewIdentity create a new identity store.
 func NewIdentity(s Settings, k string) *Identity {
+	if k == "" {
+		k = "identity"
+	}
 	return &Identity{settings: s, key: k}
 }
 
