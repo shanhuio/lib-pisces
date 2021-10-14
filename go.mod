@@ -14,6 +14,6 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/ini.v1 v1.63.2 // indirect
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20211014034015-765fb6d647ea
-	shanhu.io/misc v0.0.0-20211014033926-204d403e9327
+	shanhu.io/aries v0.0.0-20211014034549-0ec909e6b901
+	shanhu.io/misc v0.0.0-20211014034511-a11ef70da7ea
 )
