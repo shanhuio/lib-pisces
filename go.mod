@@ -13,8 +13,8 @@ require (
 	github.com/minio/sha256-simd v1.0.0 // indirect
 	github.com/rs/xid v1.3.0 // indirect
 	golang.org/x/text v0.3.7 // indirect
-	gopkg.in/ini.v1 v1.63.2 // indirect
+	gopkg.in/ini.v1 v1.64.0 // indirect
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20211023001606-74fbfde92aec
-	shanhu.io/misc v0.0.0-20211023001535-de0ceabe1cb1
+	shanhu.io/aries v0.0.0-20211113211226-d16d876c8dfa
+	shanhu.io/misc v0.0.0-20211113211021-f01a7052fb4e
 )
