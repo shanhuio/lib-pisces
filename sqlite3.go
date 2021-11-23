@@ -37,11 +37,11 @@ func Sqlite3CreateTableMissing(db *sqlx.DB, table, scheme string) error {
 	return err
 }
 
-var sqlite3KVScheme = fmt.Sprintf(`(
+const sqlite3KVScheme = `(
 	k text not null unique,
 	c text not null,
 	v blob not null
-)`)
+)`
 
 // Sqlite3CreateKV creates a key value pair sqlite3 table.
 func Sqlite3CreateKV(db *sqlx.DB, table string) error {
