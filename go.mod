@@ -6,8 +6,8 @@ require (
 	github.com/lib/pq v1.9.0
 	github.com/minio/minio-go/v7 v7.0.18
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20211204184918-a244c54c3be8
-	shanhu.io/misc v0.0.0-20211212005829-5b9264cb4a07
+	shanhu.io/aries v0.0.0-20211219232307-e1e12d665210
+	shanhu.io/misc v0.0.0-20211219232220-7c32d2d7e486
 )
 
 require (
@@ -26,15 +26,16 @@ require (
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/rs/xid v1.3.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
-	golang.org/x/crypto v0.0.0-20211209193657-4570a0811e8b // indirect
+	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
 	golang.org/x/mod v0.5.1 // indirect
-	golang.org/x/net v0.0.0-20211209124913-491a49abca63 // indirect
-	golang.org/x/sys v0.0.0-20211210111614-af8b64212486 // indirect
+	golang.org/x/net v0.0.0-20211216030914-fe4d6282115f // indirect
+	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.8 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
+	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 	lukechampine.com/uint128 v1.1.1 // indirect
 	modernc.org/cc/v3 v3.33.7 // indirect
 	modernc.org/ccgo/v3 v3.9.6 // indirect
