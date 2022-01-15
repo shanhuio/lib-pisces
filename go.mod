@@ -4,10 +4,10 @@ go 1.17
 
 require (
 	github.com/lib/pq v1.9.0
-	github.com/minio/minio-go/v7 v7.0.18
+	github.com/minio/minio-go/v7 v7.0.21
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20211219232307-e1e12d665210
-	shanhu.io/misc v0.0.0-20211219232220-7c32d2d7e486
+	shanhu.io/aries v0.0.0-20220115003748-34f842e9eda0
+	shanhu.io/misc v0.0.0-20220115003718-efc8d12040b2
 )
 
 require (
@@ -15,7 +15,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
-	github.com/klauspost/compress v1.13.6 // indirect
+	github.com/klauspost/compress v1.14.1 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
@@ -26,10 +26,10 @@ require (
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/rs/xid v1.3.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
-	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
+	golang.org/x/crypto v0.0.0-20220112180741-5e0467b6c7ce // indirect
 	golang.org/x/mod v0.5.1 // indirect
-	golang.org/x/net v0.0.0-20211216030914-fe4d6282115f // indirect
-	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e // indirect
+	golang.org/x/net v0.0.0-20220114011407-0dd24b26b47d // indirect
+	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.8 // indirect
@@ -45,5 +45,5 @@ require (
 	modernc.org/opt v0.1.1 // indirect
 	modernc.org/strutil v1.1.1 // indirect
 	modernc.org/token v1.0.0 // indirect
-	shanhu.io/text v0.0.0-20210719201909-537e563f9279 // indirect
+	shanhu.io/text v0.0.0-20211223054527-6b1ed066cd84 // indirect
 )
