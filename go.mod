@@ -6,8 +6,8 @@ require (
 	github.com/lib/pq v1.9.0
 	github.com/minio/minio-go/v7 v7.0.21
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20220115003748-34f842e9eda0
-	shanhu.io/misc v0.0.0-20220115003718-efc8d12040b2
+	shanhu.io/aries v0.0.0-20220123173645-a797f6b8507b
+	shanhu.io/misc v0.0.0-20220123153250-f0f2dee335f9
 )
 
 require (
@@ -28,13 +28,13 @@ require (
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	golang.org/x/crypto v0.0.0-20220112180741-5e0467b6c7ce // indirect
 	golang.org/x/mod v0.5.1 // indirect
-	golang.org/x/net v0.0.0-20220114011407-0dd24b26b47d // indirect
+	golang.org/x/net v0.0.0-20220121210141-e204ce36a2ba // indirect
 	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.8 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
-	gopkg.in/ini.v1 v1.66.2 // indirect
+	gopkg.in/ini.v1 v1.66.3 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 	lukechampine.com/uint128 v1.1.1 // indirect
 	modernc.org/cc/v3 v3.33.7 // indirect
@@ -45,5 +45,5 @@ require (
 	modernc.org/opt v0.1.1 // indirect
 	modernc.org/strutil v1.1.1 // indirect
 	modernc.org/token v1.0.0 // indirect
-	shanhu.io/text v0.0.0-20211223054527-6b1ed066cd84 // indirect
+	shanhu.io/text v0.0.0-20220122184333-0dca95772fe1 // indirect
 )
