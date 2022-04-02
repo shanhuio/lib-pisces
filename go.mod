@@ -6,8 +6,8 @@ require (
 	github.com/lib/pq v1.9.0
 	github.com/minio/minio-go/v7 v7.0.23
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20220326221021-e6e95937f488
-	shanhu.io/misc v0.0.0-20220326221015-6f2423569484
+	shanhu.io/aries v0.0.0-20220402162730-ec7721d8177f
+	shanhu.io/misc v0.0.0-20220402162723-99170f1ef902
 )
 
 require (
@@ -26,10 +26,10 @@ require (
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/rs/xid v1.4.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
-	golang.org/x/crypto v0.0.0-20220321153916-2c7772ba3064 // indirect
+	golang.org/x/crypto v0.0.0-20220331220935-ae2d96664a29 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220106191415-9b9b3d81d5e3 // indirect
-	golang.org/x/net v0.0.0-20220325170049-de3da57026de // indirect
-	golang.org/x/sys v0.0.0-20220325203850-36772127a21f // indirect
+	golang.org/x/net v0.0.0-20220401154927-543a649e0bdd // indirect
+	golang.org/x/sys v0.0.0-20220330033206-e17cdc41300f // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.10 // indirect
