@@ -6,8 +6,8 @@ require (
 	github.com/lib/pq v1.9.0
 	github.com/minio/minio-go/v7 v7.0.24
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20220416001513-df33ff20815d
-	shanhu.io/misc v0.0.0-20220414050540-8fe9b86d97ea
+	shanhu.io/aries v0.0.0-20220416025011-856c23b6824e
+	shanhu.io/misc v0.0.0-20220416024331-a99a86f2db1c
 )
 
 require (
