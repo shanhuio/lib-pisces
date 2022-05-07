@@ -4,10 +4,11 @@ go 1.18
 
 require (
 	github.com/lib/pq v1.9.0
-	github.com/minio/minio-go/v7 v7.0.24
+	github.com/minio/minio-go/v7 v7.0.26
+	golang.org/x/crypto v0.0.0-20220507011949-2cf3adece122
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20220416025011-856c23b6824e
-	shanhu.io/misc v0.0.0-20220416024331-a99a86f2db1c
+	shanhu.io/aries v0.0.0-20220504235102-2a268e9df444
+	shanhu.io/misc v0.0.0-20220502004337-6542f0456326
 )
 
 require (
@@ -15,7 +16,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
-	github.com/klauspost/compress v1.15.1 // indirect
+	github.com/klauspost/compress v1.15.3 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.12 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
@@ -26,10 +27,9 @@ require (
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/rs/xid v1.4.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
-	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220106191415-9b9b3d81d5e3 // indirect
-	golang.org/x/net v0.0.0-20220412020605-290c469a71a5 // indirect
-	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
+	golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4 // indirect
+	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
 	golang.org/x/term v0.0.0-20220411215600-e5f449aeb171 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.10 // indirect
