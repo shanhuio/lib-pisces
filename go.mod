@@ -4,11 +4,11 @@ go 1.18
 
 require (
 	github.com/lib/pq v1.9.0
-	github.com/minio/minio-go/v7 v7.0.32
+	github.com/minio/minio-go/v7 v7.0.34
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 	modernc.org/sqlite v1.12.0
-	shanhu.io/aries v0.0.0-20220731174825-61a8a242d72c
-	shanhu.io/misc v0.0.0-20220731174818-bf08854975a4
+	shanhu.io/aries v0.0.0-20220803070535-4107afa09a3a
+	shanhu.io/misc v0.0.0-20220803070526-2da1b044a170
 )
 
 require (
@@ -27,8 +27,8 @@ require (
 	github.com/rs/xid v1.4.0 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
-	golang.org/x/net v0.0.0-20220728211354-c7608f3a8462 // indirect
-	golang.org/x/sys v0.0.0-20220730100132-1609e554cd39 // indirect
+	golang.org/x/net v0.0.0-20220802222814-0bcc04d9c69b // indirect
+	golang.org/x/sys v0.0.0-20220731174439-a90be440212d // indirect
 	golang.org/x/term v0.0.0-20220722155259-a9ba230a4035 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.12 // indirect
